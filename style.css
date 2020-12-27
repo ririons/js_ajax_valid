@@ -1,0 +1,43 @@
+body {
+  background: #f6f5f4;
+}
+.form {
+  width: 500px;
+  background: wihte;
+  margin: 100px auto; 
+  /* 上下　左右 */
+  /* 左右をautoにすると左右中央寄せになる */
+  padding: 50px;
+}
+.form-input {
+  height: 60px;
+  background: #f6f5f4;
+  border: none;
+  /* 要素の縦横幅にborderとpaddingを含めるwidth100%　+ paddingの左右10pxが飛び出しているので、width100%の中にpadding左右10pxにしてあげる */
+  box-sizing: border-box;
+  padding:  0 10px;
+  /* 上下　左右 */
+  /* ↓親要素（form）の横幅いっぱい */
+  width: 100%;
+}
+.form-submit {
+  background: black;
+  border: none;
+  margin-top: 15px;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+}
+/* :hoverをつけるとその要素にマウスが乗った時のスタイルを指定できる */
+.form-submit:hover {
+  /* マウスカーソルのマークを指定 */
+  cursor: pointer;
+  background: #333;
+}
+
+/* :disabledで要素がsiabledの時のスタイルを指定できる */
+.form-submit:disabled {
+  cursor: not-allowed;
+  background: #8d8d8d;
+}
